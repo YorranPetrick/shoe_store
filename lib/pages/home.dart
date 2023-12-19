@@ -24,6 +24,42 @@ class _homeState extends State<home> {
       ),
       drawer: Drawer(
         shadowColor: Colors.black,
+        backgroundColor: Colors.grey[300],
+      ),
+      body: const Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.only(top: 15, bottom: 40, left: 15, right: 15),
+            child: SearchBar(
+              leading: Icon(Icons.search),
+            ),
+          ),
+          Text(
+            'Static files... Nike Shoes',
+            style: TextStyle(fontSize: 15),
+          ),
+          Padding(
+            padding: EdgeInsets.only(
+              left: 20.0,
+              right: 20,
+              top: 40,
+              bottom: 40,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Hot Picks',
+                  style: TextStyle(fontSize: 15),
+                ),
+                Text(
+                  'See All',
+                  style: TextStyle(fontSize: 15),
+                )
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
